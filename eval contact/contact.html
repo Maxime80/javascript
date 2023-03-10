@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/eval contact/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="/eval contact/img/jarditou_logo.jpg" alt="logo">
+    <br>
+    La qualité depuis 70 ans
+    <br>
+    <br>
+    <ul type="disc">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tableau.html">Tableau</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+    <br>
+    <img src="/eval contact/img/promotion.jpg" alt="logo">
+    <br>
+    <h1>Contact</h1>
+    <hr>
+    <p>*Ces zones sont obligatoires</p>
+    <form>
+        <fieldset>
+            <legend>vos coordonées</legend>
+            <label for="name">votre nom*</label>
+            <input type="text" placeholder="votre nom" id="name" name="name">
+            <br>
+            <label for="prenom">votre prénom*</label>
+            <input type="text" placeholder="votre prénom" id="prenom" name="prenom">
+            <br><br>
+            <label>Sexe*</label>
+            <input type="radio" name="sexe" value="feminin" checked> Féminin
+            <input type="radio" name="sexe" value="masculin"> Masculin
+            <br><br>
+            <label for="date"> date de naissance*</label>
+            <input type="date" id="date" name="date">
+            <br>
+            <label for="code-postal"> code postal*</label>
+            <input type="text" id="code-postal" name="code-postal">
+            <br>
+            <label for="adresse"> Adresse</label>
+            <input type="text" id="adresse" name="adresse">
+            <br>
+            <label for="ville"> ville</label>
+            <input type="text" id="ville" name="ville">
+            <br>
+            <label for="email"> email*</label>
+            <input type="email" id="email" placeholder="dave.loper@afpa.fr" name="email">
+            <br>
+            <br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Votre demande</legend>
+            <label for="sujet">sujet*</label>
+            <select id="sujet" name="sujet">
+                <option value="" selected>veuillez séléctionner un sujet</option>
+                <option value="commande">Mes commandes</option>
+                <option value="product">Question sur un produit</option>
+                <option value="reclam">Réclamation</option>
+                <option value="other">Autres</option>
+            </select>
+            <br>
+            <label for="ask">votre question*</label>
+            <textarea id="ask" name="ask"></textarea>
+        </fieldset>
+        <br>
+        <input type="checkbox" name="J'accepte" value="J'accepte"> * J'accepte le traitement informatique de ce
+        formulaire
+        <br>
+        <button type="submit" onclick="return validerForm()">Envoyer</button>
+        <button type="reset">Annuler</button>
+        <hr>
+        <ul>
+            <li><a href="#">Mention légales</a></li>
+            <li><a href="#">Horaire</a></li>
+            <li><a href="#">Plan du site</a></li>
+        </ul>
+    </form>
+</body>
+<script src="/eval contact/js/javascript.js"></script>
+
+</html>

@@ -1,0 +1,52 @@
+html body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    flex-direction: column;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 20px 50px;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a {
+    color: #fff;
+}
+#banniere {
+    text-align: center;
+}
+
+#banniere img{
+    width: 100vw;
+}
+
+#contenu {
+    display: flex;
+}
+
+#texte {
+    width: 80vw;
+}
+
+#soustexte {
+    width: 20vw;
+    background-color: #aaa;
+}
+
+@media screen and (max-width: 768px){
+  #soustexte{
+    display: none;
+  }
+  nav ul{
+    flex-direction: column;
+  }
+  #texte{
+    font-size: 12px;
+  }
+}
